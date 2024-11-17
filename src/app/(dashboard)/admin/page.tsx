@@ -1,3 +1,4 @@
+import CountChart from "@/components/CountChart";
 import UserCard from "@/components/UserCard";
 
 export default function AdminPage() {
@@ -11,6 +12,13 @@ export default function AdminPage() {
           <UserCard type="teacher" />
           <UserCard type="parent" />
           <UserCard type="staff" />
+        </div>
+        {/* MIDDLE CHARTS */}
+        <div className="flex gap-4 flex-col lg:flex-row">
+          {/* COUNT CHART */}
+          <div className="w-full lg:w-1/3 h-[450px]">
+            <CountChart />
+          </div>
         </div>
       </div>
     </div>
